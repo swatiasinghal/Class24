@@ -4,7 +4,8 @@ class Log
     {
         var options = 
         {restitution :0.8,
-           friction:1.0
+           friction:1.0,
+           density:1.0
         }
         this.body = Bodies.rectangle(x,y,20,height);
         this.width = 20;
@@ -18,14 +19,12 @@ class Log
         var pos= this.body.position;
         var angle =this.body.angle;
         push();
-      
        translate(pos.x,pos.y);
        rotate(angle);
-       
         rectMode(CENTER);
-        fill (255);
         strokeWeight(4);
         stroke ("green");
+        fill (255);
         rect(0,0,this.width,this.height);
         pop();
     }

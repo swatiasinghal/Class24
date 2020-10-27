@@ -21,10 +21,10 @@ function setup(){
 
     box3= new Box(700,240,70,70);
     box4 = new Box(920,240,70,70);
-    pig1 = new Pig(790,220);
+    pig1 = new Pig(810,220);
     log1 = new Log(810,180,300,90);
 
-    bird= new Bird();
+    bird= new Bird(100,100);
 
 }
 
